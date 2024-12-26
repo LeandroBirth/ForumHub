@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/forumhub
+    username: docker
+    password: docker123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format-sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 1000
+      database: 0
+  main:
+    allow-bean-definition-overriding: true
+jwt:
+  issuer: your-issue
+  secret: your-secret
+  expiration: 3000
+cors:
+  allowed:
+    origins: "*"
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+        type: trace
+rate-limit:
+  ip-limit: 10
+  user-limit: 10
+server:
+  port: 8080
