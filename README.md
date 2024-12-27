@@ -95,5 +95,4 @@ This project was developed as part of the Oracle Next Education (ONE) program in
 | POST   | `/api/v1/comments`      | Add a new comment.              |
 | PUT    | `/api/v1/comments/{id}` | Update comment details.         |
 | DELETE | `/api/v1/comments/{id}` | Delete a comment by ID.         |
-# ForumHub
-# ForumHub
+
